@@ -51,3 +51,7 @@ npm run proxy
 npm run start
 ```
 
+## Website
+http://celestia-pfb.silentvalidator.com/
+
+![](https://i.imgur.com/bfRjlQK.jpg)
