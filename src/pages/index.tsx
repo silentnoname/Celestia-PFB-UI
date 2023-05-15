@@ -81,8 +81,14 @@ const Home: React.FC = () => {
 
     } catch (error) {
       // Handle network error and show an error
-      console.error('Network Error, Please try again:', error);
-      setResponse(`Error: ${error.message}`);
+      if (error instanceof Error) {
+        console.error('Network Error, Please try again:', error);
+        setResponse(`Error: ${error.message}`);
+      } else {
+        console.error('An unknown error occurred:', error);
+        setResponse(`An unknown error occurred`);
+      }
+
     }
     setIsLoading(false);
   };
