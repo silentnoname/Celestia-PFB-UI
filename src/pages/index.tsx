@@ -76,7 +76,7 @@ const Home: React.FC = () => {
       } else {
         // Handle failed response and show an error
         console.error('Failed:', response);
-        setResponse(`Error: ${response.statusText}`);
+        setResponse(`Error: ${response.statusText}, please try again.`);
       }
 
     } catch (error) {
